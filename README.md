@@ -41,3 +41,17 @@ print(new_sequence)
 # А теперь то же самое запишем в сокращённой форме:
 new_sequence_better = [value * 3 for value in range(6)] # Всё!
 print(new_sequence_better)
+
+vegetables = ['Помидоры', 'Огурцы', 'Баклажаны', 'Перец', 'Капуста']
+# Сперва выполним эту задачу в обычном цикле:
+new_sequence = []
+
+for vegetable in vegetables:
+    list.append(new_sequence, len(vegetable))
+
+print(new_sequence)
+
+# А теперь то же самое запишем в сокращённой форме:
+new_sequence_better = [len(vegetable) for vegetable in vegetables]
+# Результат тот же, а код короче!
+print(new_sequence_better)
